@@ -1,0 +1,80 @@
+/* Fonts */
+h1 {
+    font-weight: bold;
+    margin: 2%;
+    float: right;
+}
+
+p.greeting {
+    font-weight: bold;
+    float: right;
+    /* margin-left: 50%;
+    margin-top: 20%; */
+
+}
+
+/* Page elements */
+img {
+
+    width: 300px;
+    /* object-fit: cover; */
+    /* float: left; */
+    margin-top: -40px;
+    margin-left: 25px;
+}
+
+
+select.drop-down-landing {
+    /* font-weight: bold; */
+    background-color: rgba(237, 175, 175, 0.533);
+    border-radius: 30px;
+    border-color: rgba(237, 175, 175, 0.533);
+    border: outset rgba(237, 175, 175, 0.533);
+    float: right;
+    margin-top:10%;
+
+    text-align: center;
+
+}
+
+select.drop-down {
+    /* font-weight: bold; */
+    background-color: rgba(237, 175, 175, 0.533);
+    border-color: rgba(237, 175, 175, 0.533);
+    border: outset rgba(237, 175, 175, 0.533);
+    border-radius: 30px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    text-align: center;
+
+}
+
+
+/* Pages */
+header {
+    background-color: rgba(237, 175, 175, 0.533);
+    /* float: right; */
+    height: 60px;
+}
+
+body {
+    background-color: rgb(119, 48, 81);
+}
+
+section.landing-section {
+    /* background-color: aquamarine; */
+}
+
+section.about-me {
+    background-color: rgba(237, 175, 175, 0.533);
+}
+
+section.education {
+    background-color: rgba(237, 175, 175, 0.533);
+}
+
+section.experience {
+    background-color: rgba(237, 175, 175, 0.533);
+}

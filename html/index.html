@@ -3,7 +3,7 @@
 
    <head>
         <meta charset="utf-8"/>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV, See Me</title>  
         <link href="../css/styles.css" rel="stylesheet" />
     </head>
@@ -13,106 +13,172 @@
             <h1 class="name">Maselo Selepe</h1>        
         </header>     -->
 
-        <section class="landing-section">
+        <!-- <aside> -->
+            <nav class="navbar" name="resume-sections">
+                <section>
+                <h2 class="sidebar">Resume Sections</h2>
+                <ul>
+                    <li> <a href="#landing-section" ><i class="fas landing"></i></class> Greetings! </a></li>
+                    <li> <a href="#section-about"><i class="fas about"></i> About Me </a></li> <!--will include skills-->
+                    <li> <a href="#experience"><i class="fas exp"></i> Work Experience </a></li>
+                    <li> <a href="#volunteer"><i class="fas vol"></i> Volunteer Experience </a></li>
+                    <li> <a href="#education"><i class="fas edu"></i> Education </a></li>
+                    <li> <a href="#contact"><i class="fas contact"></i> Contact Information </a></li>
+                </ul>
+                </section>
+            </nav>
+        <!-- </aside> -->
+      
+        <!-- <section class="landing-section" id="landing-section">
             <h1 id="name">Maselo Selepe</h1> 
+            <aside>
             <img src="../images/profile_picture-removebg.png" alt="A head-and-shoulders picture of Maselo Selepe">
+            </aside>
 
             <p id="greeting">Glad to have you here!</p>
 
             <label class="drop-down" for="resume-sections"></label>
-            <select class="drop-down-landing" name="resume-sections" id="resume-sections">
-                <option value="landing"> <a href="#landing-section" > Greetings! </a></option>
-                <option value="about-me"> <a href="#section-about" > About Me </a></option> <!--will include skills-->
-                <option value="education"> <a href="#education" > Education </a></option>
-                <option value="work-experience"><a href="#experience" > Work Experience </a></option>
-                <option value="contact-info"><a href="#contact" > Contact Information </a></option>
+            <select class="drop-down-landing" name="resume-sections"  onchange="location = this.value;">
+                <option value="#landing-section"> <a href="#landing-section" > Greetings!</option>
+                <option value="#section-about"> About Me </option> 
+                <option value="#experience"> Work Experience </option>
+                <option value="#volunteer"> Volunteer Experience </option>
+                <option value="#education"> Education </option>
+                <option value="#contact"> Contact Information </option>
             </select>
         </section>
     
         
-        <!-- <nav>
-            <ul>
-                <li> <a href="#"> About Me </a></li> 
-                <li> <a href="#"> Education </a></li>
-                <li> <a href="#"> Work Experience </a></li>
-                <li> <a href="#"> Contact Information </a></li>
-            </ul>
-        </nav> -->
-        <section class="about-me">
-            <h2 class="yellow" id="inner-text-heading"> About Me</h2>
+    
+        <section class="about-me" id="section-about">
+            <h2 class="grey" id="inner-text-heading"> About Me</h2>
 
             <label class="drop-down" for="resume-sections"></label>
-            <select class="drop-down-yellow" name="resume-sections" id="resume-sections">
-                <option value="landing"> <a href="#landing-section" > Greetings! </a></option>
-                <option value="about-me"> <a href="#section-about" > About Me </a></option> <!--will include skills-->
-                <option value="education"> <a href="#education" > Education </a></option>
-                <option value="work-experience"><a href="#experience" > Work Experience </a></option>
-                <option value="contact-info"><a href="#contact" > Contact Information </a></option>
+            <select class="drop-down-grey" name="resume-sections" onchange="location = this.value;">
+                <option value="#landing-section"> <a href="#landing-section" > Greetings!</option>
+                <option value="#section-about"> About Me </option> 
+                <option value="#experience"> Work Experience </option>
+                <option value="#volunteer"> Volunteer Experience </option>
+                <option value="#education"> Education </option>
+                <option value="#contact"> Contact Information </option>
+            </select>
             </select>
 
             <p id="inner-text">I’m an aspiring software engineer with a background in BCom, now fully dedicated to the world of tech. My journey from commerce to coding is a testament to my commitment to growth, learning, and embracing change whenever necessary. Whether I’m tackling a complex coding challenge or exploring new technologies, I’m always eager to expand my knowledge and skills.
             <br><br>
-            Beyond the technical side, I try to bring a joyful spirit to every environment I occupy. I believe that spreading positivity and joy not only enhances my own experience but also enriches the experiences of those around me..</p>
+            Beyond the technical side, I try to bring a joyful spirit to every environment I occupy. I believe that spreading positivity and joy not only enhances my own experience but also enriches the experiences of those around me.</p>
+
+            <p id="inner-text">
+                Some of my skills include:
+            </p>
+            
+            <ul id="inner-text">
+                <li>Problem Solving</li>
+                <li>Python</li>
+                <li>Teamwork</li>
+                <li>Java</li>
+                <li>Presentation Skills</li>
+            </ul>
+        </section>
+        
+        <section class="experience" id="experience">
+            <h3 class="blue" id="inner-text-heading">Work Experience</h3>
+
+            <label class="drop-down" for="resume-sections"></label>
+            <select class="drop-down-blue" name="resume-sections" onchange="location = this.value;">
+                <option value="#landing-section"> <a href="#landing-section" > Greetings!</option>
+                <option value="#section-about"> About Me </option> 
+                <option value="#experience"> Work Experience </option>
+                <option value="#volunteer"> Volunteer Experience </option>
+                <option value="#education"> Education </option>
+                <option value="#contact"> Contact Information </option>
+            </select>
+            </select>
+
+            <ul class="experience" id="inner-text">
+                <li>
+                    <h4 class="experience-item">Software Engineering Intern</h4>
+                    <p class="company">BBD (Johannesburg)</p>
+                    <p class="date-range">Feb 2025 - Present</p>
+                </li>
+                <br>
+                <li>
+                    <h4 class="experience-item">Technical Mentor</h4>
+                    <p class="company">WeThinkCode_ (Johannesburg)</p>
+                    <p class="date-range">Sep 2024 - Dec 2024</p>
+                    <p class="summary">As a technical mentor, I supported my mentees through their technical learning journey, dedicating at least 4 hours a week to motivating them and fostering a collaborative environment. I initiated and guided them through one-on-ones, workshops, retrospectives and Pecha Kuchas. My responsibilities included effective communication, problem-solving, and promoting a trusting mentee environment.
+                    I balanced this role with my second-year coursework, maintaining a good academic performance.</p>
+
+                </li>
+            </ul>
+        </section>
+
+        <section class="volunteer" id="volunteer">
+            <h3 class="grey" id="inner-text-heading">Volunteer Experience</h3>
+
+            <label class="drop-down" for="resume-sections"></label>
+            <select class="drop-down-grey" name="resume-sections" onchange="location = this.value;">
+                <option value="#landing-section"> <a href="#landing-section" > Greetings!</option>
+                <option value="#section-about"> About Me </option> 
+                <option value="#experience"> Work Experience </option>
+                <option value="#volunteer"> Volunteer Experience </option>
+                <option value="#education"> Education </option>
+                <option value="#contact"> Contact Information </option>
+            </select>
+            </select>
+
+            <ul class="volunteer" id="inner-text">
+                <li>
+                    <h4 class="experience-item">Sourcing Team</h4>
+                    <p class="company">WeThinkCode_ (Johannesburg)</p>
+                    <p class="date-range">May 2024 - Aug 2024</p>
+                    <p class="summary">The sourcing team focused on outreach efforts to raise awareness about WeThinkCode, specifically in preparation for the upcoming cohort intake. This involved engaging with the community, presenting the school’s program and values, and building connections to attract prospective students.</p>
+                </li>
+                <li>
+                    <h4 class="experience-item">WomenThinkCode_ Committee</h4>
+                    <p class="company">WomenThinkCode_ (Johannesburg)</p>
+                    <p class="date-range">Mar 2024 - Dec 2025</p>
+                    <p class="summary">I am proud to contribute to an organization dedicated to fostering a safe and empowering space for women in tech. As a secretary, I am responsible for managing organizational communication, documenting meetings, assisting in organizing and promoting events, and ensuring that our leadership team remains aligned with our mission.</p>
+                </li>
+            </ul>
         </section>
 
         <section class="education" id="education">
             <h3 class="blue" id="inner-text-heading">Education</h3>
 
             <label class="drop-down" for="resume-sections"></label>
-            <select class="drop-down-blue" name="resume-sections" id="resume-sections">
-                <option value="landing"> <a href="#landing-section" > Greetings! </a></option>
-                <option value="about-me"> <a href="#section-about" > About Me </a></option> <!--will include skills-->
-                <option value="education"> <a href="#education" > Education </a></option>
-                <option value="work-experience"><a href="#experience" > Work Experience </a></option>
-                <option value="contact-info"><a href="#contact" > Contact Information </a></option>
+            <select class="drop-down-blue" name="resume-sections" onchange="location = this.value;">
+                <option value="#landing-section"> <a href="#landing-section" > Greetings!</option>
+                <option value="#section-about"> About Me </option> 
+                <option value="#experience"> Work Experience </option>
+                <option value="#volunteer"> Volunteer Experience </option>
+                <option value="#education"> Education </option>
+                <option value="#contact"> Contact Information </option>
+            </select>
             </select>
 
             <ul class="education" id="inner-text">
                 <li>
-                    University of Witwatersrand
-                    <p>Bachelor of Commerce</p>
+                    <h4 class="experience-item">Software Engineering (NQF5)</h4>
+                    <p class="company">WeThinkCode (Johannesburg)</p>
+                    <p class="date-range">Sep 2024 - Dec 2025</p>
                 </li>
                 <li>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam illo eos aliquam rem, dicta distinctio accusantium natus repellat deleniti similique perferendis quidem pariatur voluptatum magni vero sed, accusamus perspiciatis praesentium.
-                    <p>Bachelor of Commerce</p>
+                    <h4 class="experience-item">BCom (Corporate Finance | Insurance  & Risk Management)</h4>
+                    <p class="company">WeThinkCode (Johannesburg)</p>
+                    <p class="date-range">2019 -2022</p>
                 </li>
             </ul>
         </section>
 
-        <section class="experience">
-            <h3 class="yellow" id="inner-text-heading">Work Experience</h3>
+        <section class="contact" id="contact">
+            <h3 class="grey" id="inner-text-heading">Contact Information</h3>
+            <a href="mailto:selepemaselo@gmail.com" id="inner-text">Email</a>
+            <a href="github.com/mselepe" id="inner-text">GitHub</a>
+            <a href="https://www.linkedin.com/in/selepemaselo/" id="inner-text">LinkedIn</a>
 
-            <label class="drop-down" for="resume-sections"></label>
-            <select class="drop-down-yellow" name="resume-sections" id="resume-sections">
-                <option value="landing"> <a href="#landing-section" > Greetings! </a></option>
-                <option value="about-me"> <a href="#section-about" > About Me </a></option> <!--will include skills-->
-                <option value="education"> <a href="#education" > Education </a></option>
-                <option value="work-experience"><a href="#experience" > Work Experience </a></option>
-                <option value="contact-info"><a href="#contact" > Contact Information </a></option>
-            </select>
-
-            <ul class="experience" id="inner-text">
-                <li>
-                    Technical Mentor
-                    <p>WeThinkCode_ (Johannesburg)</p>
-                    <p>Sep 2024 - Dec 2024</p>
-
-                </li>
-                <li>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam illo eos aliquam rem, dicta distinctio accusantium natus repellat deleniti similique perferendis quidem pariatur voluptatum magni vero sed, accusamus perspiciatis praesentium.
-                    <p>Bachelor of Commerce</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="contact">
-            <h3 class="blue" id="inner-text-heading">Contact Information</h3>
-            <a href="mailto:selepemaselo@gmail.com" id="inner-text">Email me!</a>
-            <p><li>
-                University of Witwatersrand
-                <p>Bachelor of Commerce</p>
-            </li></p>
-        </section>
+            
+        </section> -->
 
         
 

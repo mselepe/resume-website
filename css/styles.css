@@ -1,4 +1,3 @@
-/* Fonts */
 :root{
     --section-heading-colour: #fbb401ab;
     --heading-colour: #2b2b2c;
@@ -23,6 +22,8 @@ body {
     background-color: #2b2b2c;
 }
 
+
+/* TEXT */
 h1 {
     font-size: 400%;
     font-weight: bold;
@@ -47,72 +48,64 @@ h1 {
     display: inline-block;
     position: absolute;
     right: calc(7% + var(--navbar-width));
+    top:400px;
+}
+
+#current-role{
+    font-size: larger;
+    font-weight: bold;    
+    color: var(--heading-colour);
+    text-shadow: #ffffff -1px -1px;
+
+
+    display: inline-block;
+    position: absolute;
+    right: calc(7% + var(--navbar-width));
     top:270px;
 }
 
-img {
-    
-    width: 200px;
-    /* box-shadow: 10px 10px 5px rgba(216, 226, 229, 0.309) inset; */
-    
-    top: 200px;
-    display: inline-block;
-    position: relative;
-    left: 12%;
-    
-    --fade-amount: 80%;
-    -webkit-mask-image: radial-gradient(circle, black, black var(--fade-amount), transparent 85%);
-    mask-image: radial-gradient(circle, black, black var(--fade-amount), transparent 85%);
+.inner-text {
+    padding: 60px;
 }
 
-#inner-text {
-    margin: 50px;
-
-}
-
-#inner-text-heading {
+.section-heading {
     font-size: 220%;
     font-weight: bold;
     color: var(--section-heading-colour);
     text-shadow: #ffffff -2px -2px;
 
-    margin-top: 140px;
+    margin-top: 100px;
     margin-bottom: -10px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
-.about-heading {
-    font-size: 220%;
-    font-weight: bold;
-    color: var(--section-heading-colour);
-    text-shadow: #e3e3e3 2px 2px;
-
-    margin-top: 80px;
-    margin-bottom: -10px;
-    margin-left: 40px;
-}
-
-.about-text {
-    margin: 50px;
+ul.skills-list {
+    list-style: disc;
+    margin: -40px 0px 0px 100px;
 }
 
 .summary {
     padding-right: 50px;
 }
 
-section.landing-section {
-
-    background-color: var(--section-bg-colour);
-
-    display: inline-block;
-    position: static;
-    height: var(--section-heights);
-    width: calc(100% - var(--navbar-width));
-
-    margin-top: 64px;
+.experience-item {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0px;
 }
 
-section.about-me {
+.company {
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.date-range {
+    color:#585859;
+    margin: 5px 0px;
+}
+
+/* PAGES */
+section.pages {
     background-color: var(--section-bg-colour);
     
     display: inline-block;
@@ -123,45 +116,89 @@ section.about-me {
     margin-top: 64px;    
 }
 
-section.experience {
-    background-color: var(--section-bg-colour);
+/* IMAGE */
+img { 
+    width: 250px;
     
+    top: 220px;
     display: inline-block;
-    position: static;
-    height: var(--section-heights);
-    width: calc(100% - var(--navbar-width));
-
-    margin-top: 64px;
-}
-
-section.volunteer {
-    background-color: #82828449;
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-}
-
-section.education {
-    background-color: #9dbaba57;
+    position: relative;
+    left: 18%;
     
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
+    --fade-amount: 80%;
+    -webkit-mask-image: radial-gradient(circle, black, black var(--fade-amount), transparent 85%);
+    mask-image: radial-gradient(circle, black, black var(--fade-amount), transparent 85%);
 }
 
-section.contact {
-    background-color: #82828449;
-    padding: 30px;
+.button-scheme {
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
 
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
+    display: inline-block;
+    position: fixed;
+    right: calc(8.5% + var(--navbar-width));
+    top:400px;
+
+    color: #fbb401;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fbb40144;
 }
 
+.button-scheme-email{
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: inline-block;
+    position: fixed;
+    left: calc(100% - 50%);
+    top:250px;
+
+    color: #fbb401;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fbb40144;
+}
+
+.button-scheme-linkedin{
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: inline-block;
+    position: fixed;
+    left: calc(100% - 70%);
+    top:250px;
+
+    color: #fbb401;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fbb40144;
+}
+
+.button-scheme-github{
+    border-style: groove;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: inline-block;
+    position: fixed;
+    left: calc(100% - 90%);
+    top:250px;
+
+    color: #fbb401;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fbb40144;
+}
+
+/* NAV-BAR */
 header .navbar {
     display: inline-block;
     position:absolute;
@@ -219,70 +256,3 @@ ul li:hover a {
     letter-spacing: 2px;
 
 }
-
-
-
-/* .experience-item {
-    font-weight: bold;
-    font-size: 18px;
-    padding:0%
-}
-
-.company {
-    font-weight: bold;
-    margin-top: -10px;
-}
-
-
-.date-range {
-    color:#585859
-}
-
-
-section.about-me {
-    background-color: #91919249;
-    margin: 0px;
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    
-}
-
-section.experience {
-    background-color: #9dbaba57;
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-}
-
-section.volunteer {
-    background-color: #82828449;
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-}
-
-section.education {
-    background-color: #9dbaba57;
-    
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-}
-
-section.contact {
-    background-color: #82828449;
-    padding: 30px;
-
-    --fade-amount: 7%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-    mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
-} */

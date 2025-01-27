@@ -9,7 +9,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 html {
@@ -17,29 +17,27 @@ html {
 }
 
 .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-
     position:absolute;
-    top: 0;
     right: 0;
-    z-index: 10;
     height: 100%;
-    width: 250px;
+    width: 400px;
     
-    background: #161616;
-    transition: 0.5s ease;
-    transform: translateX(0);
+    background: #9dbaba70;
 }
 
-.sidebar {
-    color: #fbfdce;
-    font-size: 30px;
+.navbar:hover {
+    background-color: #9dbaba;
+}
+
+.navbar-heading {
+    color: #000000;
+    font-size: 20px;
     font-weight: bold;
-    padding: 30px;
     text-align: center;
-    letter-spacing: 3px;
-    background: linear-gradient(30deg, #df0155, #ed4901);
+    letter-spacing: 1px;
+    
+    padding: 20px;
+    background: #9dbaba;
 }
 
 ul {
@@ -47,22 +45,19 @@ ul {
     list-style: none;
 }
 
-ul li {
-    display: block;
-    width:100%;
-}
-
 ul li a {
-    color: #fbfdce;
-    padding: 15px 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
+    color: #000000;
+    text-align: center;
     letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    top: 180px;
+    padding: 5px 8px;
+    display: block;
     position: relative;
     transition: 0.3s;
     overflow: hidden;
-    text-transform: capitalize;
 }
 
 ul li a i {
@@ -73,25 +68,31 @@ ul li a i {
 }
 
 ul li:hover a {
-    background: #030303;
-    color: #00eaff;
-    letter-spacing: 5px;
+    color: #616567;
+    letter-spacing: 2px;
 
 }
 
 
-/* h1 {
+h1 {
     font-size: 300%;
     font-weight: bold;
     color: #3f5455;
 
-    margin-top: 3%;
-    margin-right: 15%;
-    float: right;
+    position: relative;
     
 }
 
-#greeting {
+section.landing-section {
+
+    background-color: #9dbaba57;
+
+    display: inline-block;
+    width: 74%;
+    
+}
+
+/* #greeting {
     font-weight: bold;
     display: flex;
     position: relative;

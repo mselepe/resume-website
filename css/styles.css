@@ -1,11 +1,11 @@
 :root{
-    --section-heading-colour: #fbb401ab;
+    --section-heading-colour: #fbb401;
     --heading-colour: #2b2b2c;
     --date-font-color: hsl(240, 1%, 38%);
-    --section-bg-colour: #f8f2e5;
+    --section-bg-colour: #f9f6ef;
 
     --navbar-width: 30%;
-    --section-heights:1000px;
+    --section-heights: 800px;
 }
 
 *{
@@ -32,27 +32,14 @@ h1 {
     
     display: inline-block;
     position: absolute;
-    right: calc(5% + var(--navbar-width));
-    top: 170px;
+    right: calc(3% + var(--navbar-width));
+    top: 180px;
     
 }
 
 #greeting {
-    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    font-weight: bold;    
-    color: #f59b15;
-    text-shadow: #ffffff -1px -1px;
-
-
-    display: inline-block;
-    position: absolute;
-    right: calc(7% + var(--navbar-width));
-    top:400px;
-}
-
-#current-role{
-    font-size: larger;
+    /* font-family: Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-size: 380%;
     font-weight: bold;    
     color: var(--heading-colour);
     text-shadow: #ffffff -1px -1px;
@@ -60,7 +47,20 @@ h1 {
 
     display: inline-block;
     position: absolute;
-    right: calc(7% + var(--navbar-width));
+    right: calc(3% + var(--navbar-width));
+    top:110px;
+}
+
+#current-role{
+    font-size: 140%;
+    font-weight: bold;    
+    color: var(--heading-colour);
+    text-shadow: #ffffff -1px -1px;
+
+
+    display: inline-block;
+    position: absolute;
+    right: calc(4% + var(--navbar-width));
     top:270px;
 }
 
@@ -120,7 +120,7 @@ section.pages {
 img.landing { 
     width: 250px;
     
-    top: 220px;
+    top: 240px;
     display: inline-block;
     position: relative;
     left: 18%;
@@ -150,7 +150,7 @@ img.contact {
 
     display: inline-block;
     position: fixed;
-    right: calc(8.5% + var(--navbar-width));
+    right: calc(6% + var(--navbar-width));
     top:400px;
 
     color: #fbb401;

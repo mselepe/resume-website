@@ -38,7 +38,6 @@ h1 {
 }
 
 #greeting {
-    /* font-family: Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size: 380%;
     font-weight: bold;    
     color: var(--heading-colour);
@@ -116,7 +115,7 @@ section.pages {
     margin-top: 64px;    
 }
 
-/* IMAGE */
+/* IMAGES */
 img.landing { 
     width: 250px;
     
@@ -143,6 +142,7 @@ img.contact {
     mask-image: radial-gradient(circle, black, black var(--fade-amount), transparent 85%);
 }
 
+/* BUTTONS */
 .button-scheme {
     border-style: groove;
     border-radius: 10px;

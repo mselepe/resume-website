@@ -21,7 +21,7 @@ html {
 body {
     background-color: #2b2b2c;
 }
-
+/* media query */
 
 /* TEXT */
 h1 {
@@ -61,6 +61,22 @@ h1 {
     position: absolute;
     right: calc(4% + var(--navbar-width));
     top:270px;
+}
+
+#location {
+    margin: 10% -35% 3% 0;
+    text-align: center;
+}
+
+#weather {
+    /* top: 500px; */
+    margin: 0 -35% 1% 0;
+    text-align: center;
+}
+
+#temperature {
+    margin: 0 -35% 3% 0;
+    text-align: center;
 }
 
 .inner-text {
@@ -251,6 +267,7 @@ ul {
     list-style: none;
 }
 
+
 ul li a {
     color: var(--heading-colour);
     text-align: center;
@@ -258,7 +275,7 @@ ul li a {
     text-decoration: none;
     text-transform: capitalize;
 
-    top: 180px;
+    top: 50px;
     padding: 5px 8px;
     display: block;
     position: relative;
@@ -269,7 +286,7 @@ ul li a {
 ul li a i {
     width: 70px;
     font-size: 25px;
-    text-align: center;
+    /* text-align: center; */
     padding-left: 30px;
 }
 

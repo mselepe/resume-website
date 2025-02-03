@@ -19,13 +19,13 @@ html {
 }
 
 body {
-    background-color: #2b2b2c;
+    background-color: #f9f6ef;
 }
 /* media query */
 
 /* TEXT */
 h1 {
-    font-size: 400%;
+    /* font-size: 400%; */
     font-weight: bold;
     color: var(--heading-colour);
     text-shadow: #ffffff -2px -2px;
@@ -33,12 +33,12 @@ h1 {
     display: inline-block;
     position: absolute;
     right: calc(3% + var(--navbar-width));
-    top: 180px;
+    top: 20%;
     
 }
 
 #greeting {
-    font-size: 380%;
+    /* font-size: 30%; */
     font-weight: bold;    
     color: var(--heading-colour);
     text-shadow: #ffffff -1px -1px;
@@ -47,11 +47,11 @@ h1 {
     display: inline-block;
     position: absolute;
     right: calc(3% + var(--navbar-width));
-    top:110px;
+    top: 13%;
 }
 
 #current-role{
-    font-size: 140%;
+    /* font-size: 140%; */
     font-weight: bold;    
     color: var(--heading-colour);
     text-shadow: #ffffff -1px -1px;
@@ -60,23 +60,43 @@ h1 {
     display: inline-block;
     position: absolute;
     right: calc(4% + var(--navbar-width));
-    top:270px;
+    top: 30%;
 }
 
 #location {
-    margin: 10% -35% 3% 0;
-    text-align: center;
+    font-weight: bold;    
+    color: var(--heading-colour);
+    text-shadow: #ffffff -1px -1px;
+
+
+    display: inline-block;
+    position: absolute;
+    right: calc(4% + var(--navbar-width));
+    top: 60%;
 }
 
 #weather {
-    /* top: 500px; */
-    margin: 0 -35% 1% 0;
-    text-align: center;
+    font-weight: bold;    
+    color: var(--heading-colour);
+    text-shadow: #ffffff -1px -1px;
+
+
+    display: inline-block;
+    position: absolute;
+    right: calc(8% + var(--navbar-width));
+    top: 64%;
 }
 
 #temperature {
-    margin: 0 -35% 3% 0;
-    text-align: center;
+    font-weight: bold;    
+    color: var(--heading-colour);
+    text-shadow: #ffffff -1px -1px;
+
+
+    display: inline-block;
+    position: absolute;
+    right: calc(6% + var(--navbar-width));
+    top: 67%;
 }
 
 .inner-text {
@@ -133,7 +153,6 @@ section.pages {
 
 /* IMAGES */
 img.landing { 
-    width: 250px;
     
     top: 240px;
     display: inline-block;
@@ -180,8 +199,8 @@ img.contact {
     border-style: groove;
     border-radius: 10px;
     padding: 25px;
-    width: 150px;
-    height: 80px;
+    width: 16%;
+    height: 9%;
 
     display: inline-block;
     position: fixed;
@@ -200,8 +219,8 @@ img.contact {
     border-style: groove;
     border-radius: 10px;
     padding: 25px;
-    width: 150px;
-    height: 80px;
+    width: 16%;
+    height: 9%;
 
     display: inline-block;
     position: fixed;
@@ -220,8 +239,8 @@ img.contact {
     border-style: groove;
     border-radius: 10px;
     padding: 25px;
-    width: 150px;
-    height: 80px;
+    width: 16%;
+    height: 9%;
 
     display: inline-block;
     position: fixed;
@@ -295,3 +314,4 @@ ul li:hover a {
     letter-spacing: 2px;
 
 }
+

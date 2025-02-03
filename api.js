@@ -1,3 +1,4 @@
+// API to retrieve the users location
 var locationEndpoint = 'http://ip-api.com/json/?fields=status,country,countryCode,city,lat,lon,timezone';
 
 var latitude;
@@ -15,10 +16,10 @@ xhr.onreadystatechange = function() {
         longitude= response.lon;
         document.getElementById("location").innerHTML = response.city + ", " + response.country;
 
+        // API to get the weather of the user's location
         var apikey = "9019764efdde88f9a7ad6ade03f90716";
         var weatherEndpoint = "https://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid="+apikey
 
-        // function getWeather() {
         fetch(weatherEndpoint, {
             "method": "GET",
             })
